@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-reveludp" version="0.0.1">
+    <name>RevelUDPPlugin</name>
+
+    <description>An Android Cordova plugin that allows udp multicast</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,udp,reveldigital</keywords>
+    <repo>https://github.com/flightknight22/cordova-revel-udp.git</repo>
+    <issue>https://github.com/flightknight22/cordova-revel-udp/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <js-module src="www/reveludpplugin.js" name="reveludpPlugin">
+        <clobbers target="window.plugins.reveludpPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="RevelUDPPlugin">
+                <param name="android-package" value="com.reveldigital.cordova.plugin.RevelUDP"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/RevelUDP.java" target-dir="src/com/reveldigital/cordova/plugin" />
+    </platform>
+</plugin>

@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-reveludpplugin",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin that allows udp multicast",
+  "cordova": {
+    "id": "cordova-plugin-reveludpplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flightknight22/cordova-revel-udp.git"
+  },
+  "keywords": [
+    "Multicast",
+    "UDP",
+    "RevelDigital",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Avery Knight <avery.k@reveldigital.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flightknight22/cordova-revel-udp/issues"
+  },
+  "homepage": "https://github.com/flightknight22/cordova-revel-udp"
+}
